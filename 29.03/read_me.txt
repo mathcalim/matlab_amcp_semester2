@@ -1,1 +1,1 @@
-Kanye West
+Thank you for reading
