@@ -1,0 +1,8 @@
+Starting with the symbolic expression y = (x-1)^100, we try to obtain a vector of its coefficients 
+using sym2poly. I also did this with coeffs, which unfortunately crashed Matlab when I tried to 
+do anything with it. Looking at the vector of coefficients produced by sym2poly we see that there are
+zeros and very small numbers. I suspect that in dealing with such large integers that have to be
+converted to a vector of floats, we have had overflow and large rounding errors in the conversion
+process. We note that in the expansion of our function the coefficients of highest magnitude will be
+100C49 which is of the 29th order of magnitude ~ 1e+29. This is relatively close to the largest
+possible float with a precision of up to 38 decimals.
