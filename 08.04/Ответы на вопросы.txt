@@ -1,0 +1,23 @@
+3. Изучить функцию fminsearch. Чем она отличается от fminbnd?
+
+(I hope it's ok that I answer these in English)
+fminbnd attempts to find the minimum of a function within some bounded
+and closed subset of R, in our case that is simply an array with a minimum
+and maximum value, which is where we get the abbreviation 'bnd'. fminsearch
+is an iterative algorithm that finds a minimum value, starting with some 
+approximation that the user gives. It accepts only one argument, instead of two.
+
+4. Как работает функция islocalmin?
+
+I'm not exactly sure how the algorithm works, but the use of islocalmin 
+is as such. We pass some array A of values to the function, along with the
+function that we are investigating. islocalmin returns an array with the
+exact same length as the array passed consisting of 1's and 0's, where
+1 is at an index i if the function has a local minimum at A(i,1), and 0
+otherwise.
+
+5. Какую дополнительную информацию можно получить с помощью функции optimset?
+
+Used together with fminsearch, for example, optimset allows us to set stricter
+stopping conditions, meaning that we may manually set a much higher error
+tolerance in order to find our extrema to a higher degree of precision.
