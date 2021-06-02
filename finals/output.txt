@@ -1,0 +1,8 @@
+First year GDP growth exceeded 5.00
+France 1961
+United_Kingdom 1961
+Japan 1961
+Singapore 1961
+United_States 1962
+China 1963
+Russian_Federation 2000
